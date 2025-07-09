@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Optivue</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Optivue</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#cart">Cart</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <img src="images/hero.jpg" alt="Hero Image" />
+    <button onclick="scrollToSection('shop')">Explore Now</button>
+  </header>
+
+  <section id="shop" class="products">
+    <h2>Sunglasses</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="images/sunglasses1.jpg" alt="Sunglass 1">
+        <p>Classic Sunglass - ₹999</p>
+        <button onclick="addToCart('Classic Sunglass', 999)">Order</button>
+      </div>
+    </div>
+
+    <h2>Frames</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="images/frame1.jpg" alt="Frame 1">
+        <p>Premium Frame - ₹1299</p>
+        <button onclick="addToCart('Premium Frame', 1299)">Order</button>
+      </div>
+    </div>
+
+    <h2>Accessories</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="images/cloth.jpg" alt="Cloth">
+        <p>Lens Cleaning Cloth - ₹99</p>
+        <button onclick="addToCart('Cleaning Cloth', 99)">Order</button>
+      </div>
+    </div>
+
+    <h2>Contact Lenses</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="images/lens1.jpg" alt="Lens">
+        <p>Color Contact Lens - ₹799</p>
+        <button onclick="addToCart('Color Contact Lens', 799)">Order</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="cart" class="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p id="total">Total: ₹0</p>
+    <h3>Payment Options</h3>
+    <ul>
+      <li>Cash on Delivery (COD)</li>
+      <li>Paytm: +91XXXXXXXXXX</li>
+    </ul>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: rrfitnessfact@directgmail.com</p>
+  </section>
+
+  <section class="reviews">
+    <h2>Customer Reviews</h2>
+    <p>No reviews yet. Your feedback will appear here after purchase.</p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
